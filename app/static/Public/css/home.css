@@ -1,0 +1,85 @@
+#home{
+    height: 80vh;
+    background: url("/static/Public/img/blog-home-bg.png")no-repeat center center / cover;
+    
+}
+.text-cont{
+    background-color: #c5cbc591;
+    height: 10pc;
+    width: 35pc;
+    position: relative;
+    top: 79px;
+    left: 123px;
+    padding: 4px;
+    border-radius: 1pc;
+}
+.text-cont p{
+    margin-top: 4px;
+}
+
+#few-blogs{
+    padding-top: 40px;
+    height: 100%;
+    background-color: var(--tenper);
+}
+#few-blogs h1{
+    margin-top: 1pc;
+}
+#few-blogs a{
+    text-decoration: none;
+}
+.blogs-area{
+    height: 100%;
+    width: 80%;
+    margin: 10px;
+    background-color: var(--sixper);
+    border-radius: 3pc;
+    padding: 10px;
+}
+.blogs{
+    height: 10pc;
+    width: 80%;
+    border-radius: 10px;
+   background-color: #fffbfb9c;
+    margin-bottom: 4px;
+}
+
+.titel-con{
+    display: flex;
+    flex-direction: column;
+}
+.BLGtitle{
+    height: 3pc;
+    padding: 4px;
+    width: 100%;
+    font-size: 30px;
+    /* background-color: darkolivegreen; */
+}
+.BLGcontent{
+    height: 7pc;
+    padding: 4px;
+    /* background-color: darkorange; */
+}
+
+#about-home{
+    height: 45vh;
+    width: 100%;
+    /* background-color: steelblue; */
+}
+.about{
+    width: 80%;
+    height: 90%;
+    /* background-color: salmon; */
+}
+.about-text-area{
+    width: 80%;
+    height: 80%;
+    /* background-color: white; */
+    padding: 4px;
+}
+.about-text-area h1{
+    margin-bottom: 8px;
+}
+.about-text-area p{
+    padding-left: 10px;
+}

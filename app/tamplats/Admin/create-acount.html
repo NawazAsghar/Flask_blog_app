@@ -1,0 +1,18 @@
+{% extends '/Public/public_index.html'%}
+{% block title %} Create-acount {% endblock %}
+{% block body %}
+<link rel="stylesheet" href="{{url_for('static', filename = '/Admin/css/create-acount.css')}}">
+<section id="create-ac" class="fullflex">
+    <form action="/create-acount" method="POST" class="cre-ca-form flexwihtcolum">
+        <img id="ca-pro" src="{{url_for('static', filename = '/Admin/imgs/ca-pic.png')}}" alt="">
+        <a href="/" id="cross" class="fullflex">&cross;</a>
+        <input type="text" class="ca-inputs" name="name" placeholder="Enter your name">
+        <input type="text" class="ca-inputs" name="last-name" placeholder="Enter your last name">
+        <input type="email" class="ca-inputs" name="email" placeholder="Enter your email">
+        <input type="password" class="ca-inputs" name="password" placeholder="Enter your password">
+        <input type="submit" value="Create" class="ca-inputs" id="create">
+    </form>
+</section>
+
+
+{% endblock %}

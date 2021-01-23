@@ -1,0 +1,22 @@
+#about-home{
+    height: 45vh;
+    width: 100%;
+    /* background-color: steelblue; */
+}
+.about{
+    width: 80%;
+    height: 90%;
+    /* background-color: salmon; */
+}
+.about-text-area{
+    width: 80%;
+    height: 80%;
+    /* background-color: white; */
+    padding: 4px;
+}
+.about-text-area h1{
+    margin-bottom: 8px;
+}
+.about-text-area p{
+    padding-left: 10px;
+}

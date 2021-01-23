@@ -1,0 +1,65 @@
+#create-ac{
+    height: 70vh;
+    background-color: var(--sixper);
+}
+.cre-ca-form{
+    height: 70%;
+    width: 40%;
+    border-radius: 2pc;
+    background-color: var(--tenper);
+}
+.ca-inputs{
+    width: 70%;
+    height: 40px;
+    border: none;
+    outline: none;
+    margin: 4px 0px;
+    font-size: 18px;
+    margin-top: 10px;
+    border-radius: 3pc;
+    padding-left: 1pc;
+    background-color: var(--sixper);
+}
+.ca-inputs:hover{
+    background-color: var(--thirper);
+}
+#create{
+    margin-top: 15px;
+    margin-top: 10px;
+    height: 30px;
+    font-size: 18px;
+}
+
+#create:hover{
+    background-color: var(--thirper);
+    font-size: 20px;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+#ca-pro{
+    max-height: 80px;
+    border-radius: 10pc;
+    margin-bottom: -24px;
+    background-position: center;
+    background-size: cover;
+    background-clip: border-box;
+}
+
+#cross{
+    text-decoration: none;
+    color: black;
+    position: relative;
+    left: 17pc;
+    height: 40px;
+    width: 40px;
+    font-size: 30px;
+    top: -3.9pc;
+    transition: all 1s ease;
+}
+#cross:hover{
+    transform: rotate(190deg);
+    color: rgb(255, 0, 0);
+    background-color: var(--tenper);
+    border-radius: 4pc;
+}

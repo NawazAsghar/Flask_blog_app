@@ -1,0 +1,25 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.fullflex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.flexwihtcolum{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column
+}
+.flexwihtoutjusty{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+.flexwihtoutali{
+    display: flex;
+    justify-content: center;
+}

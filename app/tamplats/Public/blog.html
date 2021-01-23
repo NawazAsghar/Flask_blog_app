@@ -1,0 +1,19 @@
+{% extends '/Public/public_index.html'%}
+{% block title %} Blog {% endblock %}
+{% block body %}
+<link rel="stylesheet" href="{{url_for('static', filename ='/Public/css/blog.css')}}">
+<section id="few-blogs" class="flexwihtcolum">
+    <h1>Some recent blogs</h1>
+    <div class="blogs-area flexwihtcolum">
+
+        <a href="" class="blogs">
+            <div class="titel-con">
+                <div class="BLGtitle">This is title</div>
+                <div class="BLGcontent">This is contaent</div>
+            </div>
+        </a> 
+        <a href="" class="see-more-blog fullflex">See more blogs</a>
+        
+    </div>
+</section>
+{% endblock %}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename = '/css_short/variable.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename = '/css_short/classes.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename = '/Public/css/public_index.css')}}">
+    <title>{% block title %} {% endblock %}</title>
+</head>
+<body>
+
+    <nav class="flexwihtoutjusty">
+        <div class="left_nav">
+            <li class="nav_lis"> <a class="nav_encer" href="/">Home</a> </li>
+            <li class="nav_lis"> <a class="nav_encer" href="/blog">Blogs</a> </li>
+            <li class="nav_lis"> <a class="nav_encer" href="/about">About</a> </li>
+        </div>
+        <div class="between_nav fullflex">
+            <!-- <li class="nav_lis"> <a href="">Home</a> </li>
+            <li class="nav_lis"> <a href="">Blogs</a> </li>
+            <li class="nav_lis"> <a href="">About</a> </li> -->
+        </div>
+        <div class="right_nav fullflex">
+            <li class="nav_lis"> <a class="nav_encer" id="login_btn" href="/login">Login</a> </li>
+        </div>
+
+    </nav>
+
+    {% block body %} {% endblock %}
+
+    <footer class="flexwihtcolum">
+        <div class="uperfooter fullflex">
+            <div class="uper-left-foo">
+                <h1>Pages</h1>
+                <a href="/">Home</a>
+                <a href="/blog">Blogs</a>
+                <a href="/about">About</a>
+            </div>
+            <div class="uper-between-foo">
+                <h1>About</h1>
+                <a href="">Trems to use</a>
+                <a href="">Privacy Policy</a>
+                <a href="">Cookies</a>
+            </div>
+            <div class="uper-right-foo">
+                <h1>Join us</h1>
+                <a href="">GitHub</a>
+                <a href="">Facebook</a>
+                <a href="">Twitter</a>
+                <a href="">Linked in</a>
+            </div>
+        </div>
+        <hr class="hr">
+        <div class="lowerfooter fullflex">
+            <p>Copy &copy; right recived 2020/2021</p>
+        </div>
+    </footer>
+
+    <script src="{{url_for('static', filename = '/Public/js/public_index.js')}}"></script>
+</body>
+</html>
