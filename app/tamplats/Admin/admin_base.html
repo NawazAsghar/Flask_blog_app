@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename = '/css_short/variable.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename = '/css_short/classes.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename = '/Admin/css/admin_base.css')}}">
+    <title>{% block title %} {% endblock %}</title>
+</head>
+<body>
+    <nav class="flexwihtoutjusty">
+        <div class="left_nav">
+            <li class="nav_lis"> <a class="nav_encer" href="/dishbord">Dishbord</a> </li>
+            <li class="nav_lis"> <a class="nav_encer" href="/posts">Posts</a> </li>
+            <li class="nav_lis"> <a class="nav_encer" href="/porfile">Profile</a> </li>
+        </div>
+        <div class="between_nav fullflex">
+            <!-- <li class="nav_lis"> <a href="">Home</a> </li>
+            <li class="nav_lis"> <a href="">Blogs</a> </li>
+            <li class="nav_lis"> <a href="">About</a> </li> -->
+        </div>
+        <div class="right_nav fullflex">
+            <li class="nav_lis"> <a class="nav_encer" id="login_btn" href="/logout">Logout</a> </li>
+        </div>
+
+    </nav>
+    {% block body %} {% endblock %}
+</body>
+</html>

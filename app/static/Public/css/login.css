@@ -84,19 +84,37 @@
     padding-left: 1pc;
     margin-bottom: 7px;
 }
-
+.shw-pas-btn{
+    background-color: blue;
+    height: 17px;
+    margin-right: 10px;
+}
+.showpass{
+    /* background-color: blueviolet; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 2pc;
+    padding-left: 1pc;
+    margin-top: -6px;
+    margin-bottom: 8px;
+}
 
 #sub_btn{
     justify-content: center;
-    background-color: #7d6f7169;
+    background-color:#b3a5a769;
     font-size: 18px;
     height: 40px;
+    /* box-shadow: 12px 40px 50px black; */
 }
 
 
 #sub_btn:hover{
     font-size: 20px;
     transition: 0.5s;
+    background-color: #0000efb3;
+    color: white;
+    box-shadow: 8px 9px 1pc #00000075;
 }
 
 #creat_ac{

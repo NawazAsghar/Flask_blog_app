@@ -11,14 +11,27 @@
             <div class="lowerlogin fullflex">
                 <form action="/login" method="POST" class="form">
                     <input type="text" class="inputs" name="name" placeholder="Enter your name">
-                    <input type="text" class="inputs" name="last-name" placeholder="Enter your last name">
-                    <input type="email" class="inputs" name="email" placeholder="Enter your email">
-                    <input type="password" class="inputs" name="password" placeholder="Enter your password">
+                    <!-- <input type="text" class="inputs" name="last-name" placeholder="Enter your last name"> -->
+                    <!-- <input type="email" class="inputs" name="email" placeholder="Enter your email"> -->
+                    <input type="password" class="inputs" name="password" id="showpassbtn" placeholder="Enter your password">
+                    <div class="showpass">
+                        <input type="checkbox" onclick="myFunction()" class="shw-pas-btn">Show Password
+                    </div>
                     <input type="submit" value="Login" class="inputs" id="sub_btn">
-                    <a href="/create-acount" id="creat_ac" class="inputs">Create account</a>
+                    <!-- <a href="/create-acount" id="creat_ac" class="inputs">Create account</a> -->
                 </form>
             </div>
             
         </div>
     </div>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("showpassbtn");
+            if (x.type === "password") {
+                x.type = "text";
+            } else {
+                x.type = "password";
+            }
+        }
+    </script>
 {% endblock%}

@@ -8,8 +8,7 @@ app.config['SECRET_KEY'] = 'oh_so_secret'
 db = SQLAlchemy(app)
 
 
-with open('G:\\__Coding__\\___Projects___\\Blog-site-with-flask\\app\\user.json', 'r') as f:
-    userdata = json.load(f)['users']
+
 
 class Create_accout_cls(db.Model):
     __tablename__ = 'create-accounts'
@@ -49,12 +48,45 @@ def loginpage():
         logindata = request.form
         name = logindata['name']
         password = logindata['password']
+        with open('G:\\__Coding__\\___Projects___\\Blog-site-with-flask\\app\\user.json', 'r') as f:
+            userdata = json.load(f)['users']
+            if name == userdata['name'] and password == userdata['password']:
+                # Here i was facing the error becuse of the input of the fomr.
+                # Every time i pack the input from the chrom form sugitions and i don't konw why it wan't work.
+                # Maybe becuse of the chrome stoing the input with some kind of decoding so there for my input and the json file name was't same 
+                # So then i was getting the else return.
+                return render_template('/Admin/dishbord.html')
+            else:
+                return redirect(request.url)
+    return render_template('/Public/login.html')
 
-        if name == userdata['name'] and password == userdata['password']:
-            session['user'] = name
-            return render_template('/Admin/dishbord.html')
+@app.route('/dishbord')
+def dishbord():
+    if request.method == 'POST':
+        logindata = request.form
+        name = logindata['name']
+        password = logindata['password']
+        with open('G:\\__Coding__\\___Projects___\\Blog-site-with-flask\\app\\user.json', 'r') as f:
+            userdata = json.load(f)['users']
+            if name == userdata['name'] and password == userdata['password']:
+                # Here i was facing the error becuse of the input of the fomr.
+                # Every time i pack the input from the chrom form sugitions and i don't konw why it wan't work.
+                # Maybe becuse of the chrome stoing the input with some kind of decoding so there for my input and the json file name was't same 
+                # So then i was getting the else return.
+                return render_template('/Admin/dishbord.html')
+            else:
+                 return render_template('/Public/login.html')
+    return render_template('/Public/login.html')
 
-        else:
-            return 'Nooooooo'
+@app.route('/posts')
+def posts():
+    return render_template('/Admin/posts.html')
 
+@app.route('/porfile')
+def porfile():
+    return render_template('/Admin/porfile.html')
+
+@app.route('/logout')
+def logout():
+    return render_template('/Admin/logout.html')
 
