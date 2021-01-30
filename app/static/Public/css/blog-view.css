@@ -1,24 +1,32 @@
 #view-blog{
     height: 110%;
-    background-color: rgb(19, 177, 82);
+    /* background-color: rgb(19, 177, 82); */
 }
 .blog-continer{
     width: 80%;
-    background-color: brown;
+    /* background-color: brown; */
     margin: 1pc;
     padding: 5px;
 }
 .blog-title{
-    background-color: burlywood;
+    /* background-color: burlywood; */
     height: 3pc;
     font-size: 30px;
 }
 .blog-content{
-    background-color: cadetblue;
+    /* background-color: cadetblue; */
 }
 .outher{
     list-style: none;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    /* background-color: red; */
+    margin-top: 1pc;
+}
+.horizintal_line{
+    margin-top: 1pc;
+    height: 2px;
+    background-color: black;
+    border: none;
 }

@@ -1,0 +1,15 @@
+{% extends '/Admin/admin_base.html'%}
+{% block title %} Add new post {% endblock %}
+{% block body %}
+<link rel="stylesheet" href="{{url_for('static', filename = '/Admin/css/add_newPosts.css')}}">
+    <section id="add_new_post" class="fullflex">
+        <form action="/add_posts" class="flexwihtcolum" method="POST">
+            <input type="text" name="title" class="new-post-inputs" placeholder="Title of this blog">
+            <input type="text" name="slug" class="new-post-inputs" placeholder="Slug of this blog">
+            <textarea name="content" id="post_content" class="new-post-inputs" placeholder="Content here"></textarea>
+            <input type="text" name="auther" class="new-post-inputs" placeholder="Auther's name">
+            <input type="submit" class="new-post-inputs" id="post_btn" value="Post">
+
+        </form>
+    </section>
+{% endblock%}

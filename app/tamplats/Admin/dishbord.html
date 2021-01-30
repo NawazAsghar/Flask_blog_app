@@ -1,5 +1,20 @@
 {% extends '/Admin/admin_base.html'%}
-{% block title %} dishbord {% endblock %}
+{% block title %} posts {% endblock %}
 {% block body %}
-    <h1>Dishbord</h1>
+<link rel="stylesheet" href="{{url_for('static', filename = '/Admin/css/dishbord.css')}}">
+<section id="few-blogs" class="flexwihtcolum">
+    <h1>Your Posts</h1>
+    <div class="blogs-area flexwihtcolum">
+        {% for post in posts %}
+            <a href="/view/{{post.slug}}" class="blogs">
+                <div class="titel-con">
+                    <div class="BLGtitle">{{post.title}}</div>
+                    <div class="BLGcontent">{{post.content[0:400]}}...</div>
+                </div>
+            </a> 
+        {% endfor %}
+    </div>
+</section>
+    
 {% endblock%}
+

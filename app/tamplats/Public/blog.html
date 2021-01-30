@@ -6,13 +6,15 @@
     <h1>Some recent blogs</h1>
     <div class="blogs-area flexwihtcolum">
 
-        <a href="" class="blogs">
+        {% for post in posts %}
+        <a href="/view/{{post.slug}}" class="blogs">
             <div class="titel-con">
-                <div class="BLGtitle">This is title</div>
-                <div class="BLGcontent">This is contaent</div>
+                <div class="BLGtitle">{{post.title}}</div>
+                <div class="BLGcontent">{{post.content[0:400]}}...</div>
             </div>
         </a> 
-        <a href="" class="see-more-blog fullflex">See more blogs</a>
+        {% endfor %}
+        <!-- <a href="" class="see-more-blog fullflex">See more blogs</a> -->
         
     </div>
 </section>

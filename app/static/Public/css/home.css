@@ -23,7 +23,7 @@
     background-color: var(--tenper);
 }
 #few-blogs h1{
-    margin-top: 1pc;
+    margin-top: 4pc;
 }
 #few-blogs a{
     text-decoration: none;
@@ -32,16 +32,22 @@
     height: 100%;
     width: 80%;
     margin: 10px;
-    background-color: var(--sixper);
+    /* background-color: var(--sixper); */
     border-radius: 3pc;
     padding: 10px;
+}
+.blogs-area a:hover{
+    font-size: 1.2rem;
 }
 .blogs{
     height: 10pc;
     width: 80%;
     border-radius: 10px;
    background-color: #fffbfb9c;
-    margin-bottom: 4px;
+    margin-bottom: 1.2pc;
+}
+.blogs:hover{
+    box-shadow: 8px 9px 1pc #00000075;
 }
 
 .titel-con{
@@ -64,7 +70,7 @@
 #about-home{
     height: 45vh;
     width: 100%;
-    /* background-color: steelblue; */
+    background-color: #ecedee;
 }
 .about{
     width: 80%;

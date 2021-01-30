@@ -22,7 +22,7 @@ nav{
 
 .nav_lis{
     list-style: none;
-    width: 4pc;
+    width: 6pc;
     margin: 4px;
     /* background: gray; */
     padding: 4px;
@@ -53,4 +53,58 @@ nav{
 .right_nav{
     /* background-color: slateblue; */
     width: 30%;
+    justify-content: space-around;
+}
+
+.full-logout-page{
+    position: absolute;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.logout_continer{
+    height: 26%;
+    width: 30%;
+    background-color: white;
+    border-radius: 1pc;
+}
+.logout_msg{
+    height: 70%;
+    /* background-color: yellow; */
+    padding: 2pc;
+}
+.logout_dission{
+    height: 30%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-around;
+
+
+}
+.close{
+    font-size: 2pc;
+    text-decoration: none;
+    /* background-color: rgb(154, 142, 135); */
+    width: 50%;
+    color: black;
+
+}
+.ok{
+    font-size: 2pc;
+    text-decoration: none;
+    /* background-color: silver; */
+    width: 50%;
+    color: black;
+
+}
+.close:hover{
+    color: red;
+}
+.ok:hover{
+    color: blue;
 }

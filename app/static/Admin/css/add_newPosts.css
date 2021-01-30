@@ -1,0 +1,25 @@
+#add_new_post{
+    /* background-color: blue; */
+    height: 70vh;
+}
+#add_new_post form{
+    display: flex;
+    flex-direction: column;
+}
+.new-post-inputs{
+    height: 40px;
+    width: 30pc;
+    margin: 4px;
+    padding: 5px;
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+    border-radius: 1pc;
+    background-color: honeydew;
+}
+#post_content{
+    height: 5pc;
+}
+#post_btn{
+    margin-top: 1pc;
+}

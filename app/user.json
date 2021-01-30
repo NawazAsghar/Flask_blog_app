@@ -2,6 +2,12 @@
     "users":
     {
         "name":"NZA",
-        "password":"myBlogSite#PASS"
+        "password":"PASS"
+    },
+    "params":{
+        "home_heading":"Learn and Teach some skills. Share your skill to earn.",
+        "home_pera":"In this site you can share your idea and skill in blog to help other. You can also private your blogs then no one can see your blog wihtout you. Your privacy is our policy, you will be portected by any kind of threats.",
+        "number_of_posts_on_home": 3,
+        "number_of_posts_on_blog": 5
     }
 }

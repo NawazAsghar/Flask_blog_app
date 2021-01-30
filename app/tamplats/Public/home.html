@@ -5,8 +5,8 @@
 <link rel="stylesheet" href="{{url_for('static', filename = '/Public/css/home.css')}}">
     <section id="home">
         <div class="text-cont">
-            <h1>Learn and Teach some skills. Share your skill to earn.</h1>
-            <p>In this site you can share your idea and skill in blog to help other. You can also private your blogs then no one can see your blog wihtout you. Your privacy is our policy, you will be portected by any kind of threats.</p>
+            <h1>{{params['home_heading']}}</h1>
+            <p>{{params['home_pera']}}</p>
         </div>
     </section>
 
@@ -14,13 +14,14 @@
         <h1>Some recent blogs</h1>
         <div class="blogs-area flexwihtcolum">
 
-            <a href="/vew" class="blogs">
+            {% for post in posts %}
+            <a href="/view/{{post.slug}}" class="blogs">
                 <div class="titel-con">
-                    <div class="BLGtitle">This is title</div>
-                    <div class="BLGcontent">This is contaent</div>
+                    <div class="BLGtitle">{{post.title}} </div>
+                    <div class="BLGcontent">{{post.content[0:400]}}...</div>
                 </div>
             </a>
-
+            {% endfor %}
         </div>
         
     </section>

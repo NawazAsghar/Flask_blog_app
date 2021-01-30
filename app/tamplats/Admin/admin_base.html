@@ -12,8 +12,8 @@
     <nav class="flexwihtoutjusty">
         <div class="left_nav">
             <li class="nav_lis"> <a class="nav_encer" href="/dishbord">Dishbord</a> </li>
-            <li class="nav_lis"> <a class="nav_encer" href="/posts">Posts</a> </li>
-            <li class="nav_lis"> <a class="nav_encer" href="/porfile">Profile</a> </li>
+            <!-- <li class="nav_lis"> <a class="nav_encer" href="/posts">Dishbord</a> </li> -->
+            <li class="nav_lis"> <a class="nav_encer" href="/add_posts">Add post</a> </li>
         </div>
         <div class="between_nav fullflex">
             <!-- <li class="nav_lis"> <a href="">Home</a> </li>
@@ -21,10 +21,32 @@
             <li class="nav_lis"> <a href="">About</a> </li> -->
         </div>
         <div class="right_nav fullflex">
-            <li class="nav_lis"> <a class="nav_encer" id="login_btn" href="/logout">Logout</a> </li>
+            <li class="nav_lis"> <a class="nav_encer" id="logout_btn" href="#">Logout</a> </li>
+            <li class="nav_lis"> <a class="nav_encer" id="login_btn" href="/">Home</a> </li>
         </div>
 
+        <div class="full-logout-page">
+            <div class="logout_continer">
+                <div class="logout_msg">
+                    <h3>Do you realy want to logout?</h3>
+                    <p>If you logout then you have to enter the user name and password to login. Hope you'll be back.</p>
+                </div>
+                <hr>
+                <div class="logout_dission">
+                    <a href="/dishbord" class="close fullflex">No</a>
+                    <a href="/logout" class="ok fullflex">Yes</a>
+                </div>
+            </div>
+        </div>
     </nav>
+    <script>
+        document.getElementById('logout_btn').addEventListener('click', function(){
+            document.querySelector('.full-logout-page').style.display = 'flex';
+        })
+        document.querySelector('.close').addEventListener('click', function(){
+            document.querySelector('.full-loginpage').style.display = 'none';
+        })
+    </script>
     {% block body %} {% endblock %}
 </body>
 </html>

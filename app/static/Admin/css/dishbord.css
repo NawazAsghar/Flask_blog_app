@@ -1,6 +1,6 @@
 #few-blogs{
     height: 100%;
-    background-color: var(--tenrper);
+    background-color: #fffbfb9c;
 }
 #few-blogs h1{
     margin-top: 4pc;
@@ -9,7 +9,7 @@
     height: 100%;
     width: 80%;
     margin: 10px;
-    background-color: var(--sixper);
+    /* background-color: var(--sixper); */
     border-radius: 3pc;
     padding: 10px;
 }
@@ -17,17 +17,19 @@
     text-decoration: none;
 }
 .blogs-area a:hover{
-    font-size: 1.2rem;;
+    font-size: 1.2rem;
 }
 .blogs{
     height: 10pc;
     width: 80%;
     border-radius: 10px;
-   background-color: #fffbfb9c;
-    margin-bottom: 15px;
+    background-color: #ced7d83b;
+    margin-bottom: 1.2pc;
 }
+
 .blogs:hover{
     box-shadow: 8px 9px 1pc #00000075;
+    /* height: 12pc; */
 }
 .titel-con{
     display: flex;
@@ -47,16 +49,3 @@
     /* background-color: darkorange; */
 }
 
-.see-more-blog{
-    height: 2pc;
-    margin-top: 5px;
-    background: var(--tenper);
-    width: 8pc;
-    border-radius: 2pc;
-    margin-bottom: 3px;
-    transition: 0.4s;
-}
-.see-more-blog:hover{
-    font-size: 18px;
-    box-shadow: 8px 9px 1pc #00000075;
-}
