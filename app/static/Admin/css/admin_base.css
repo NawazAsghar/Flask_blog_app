@@ -4,15 +4,19 @@
     box-sizing: border-box;
 }
 
-body{
-    background-color: var(--sixper);
-}
 
 nav{
     height: 50px;
-    background-color: var(--tenper);
+    background-color: white;
     display: flex;
     justify-content: space-around;
+    box-shadow: -1px -9px 20px 2px #0009;
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+}
+nav a{
+    color: black;
 }
 
 .nav_encer{
@@ -24,17 +28,18 @@ nav{
     list-style: none;
     width: 6pc;
     margin: 4px;
-    /* background: gray; */
     padding: 4px;
     border-radius: 1pc;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .nav_lis:hover{
-    border-bottom: 2px solid black;
-    border-radius: 0px;
-    transition: 0.3s;
+    font-weight: bold;
+    background: #cdc6dc2e;
+    /* transition: 0.4s ease-in-out; */
+    
 }
 
 .left_nav{
@@ -55,6 +60,11 @@ nav{
     width: 30%;
     justify-content: space-around;
 }
+
+/* 
+================= LOGOUT ========== 
+
+*/
 
 .full-logout-page{
     position: absolute;

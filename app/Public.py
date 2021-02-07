@@ -4,7 +4,7 @@ from flask import render_template
 from app.data_base import Posts, db, Create_accout_cls
 import json
 
-with open('G:\\__Coding__\\___Projects___\\Blog-site-with-flask\\app\\user.json', 'r') as f:
+with open('G:\\__Coding__\\___Projects___\\Flask_blog_app\\app\\user.json', 'r') as f:
     params = json.load(f)['params']
 
 @app.route('/')

@@ -18,16 +18,43 @@
             <li class="nav_lis"> <a class="nav_encer" href="/about">About</a> </li>
         </div>
         <div class="between_nav fullflex">
-            <!-- <li class="nav_lis"> <a href="">Home</a> </li>
-            <li class="nav_lis"> <a href="">Blogs</a> </li>
-            <li class="nav_lis"> <a href="">About</a> </li> -->
+            <!-- <h1>NZAblogs</h1> -->
         </div>
         <div class="right_nav fullflex">
-            <li class="nav_lis"> <a class="nav_encer" id="login_btn" href="/login">Login</a> </li>
-            <li class="nav_lis"> <a class="nav_encer" id="login_btn" href="/dishbord">Dishbord</a> </li>
+            <li class="nav_lis"> <a class="nav_encer" id="login_btn" href="#">Login</a> </li>
+            <li class="nav_lis"> <a class="nav_encer" id="dishbord" href="/dishbord">Dishbord</a> </li>
         </div>
 
     </nav>
+<!--
+    
+    LOGIN POPUP
+
+-->
+    <div class="full-loginpage">
+        <div class="login_area flexwihtcolum">
+            <div class="uperlogin fullflex">
+                <img id="login_por" src="{{url_for('static', filename = '/Public/img/girl-login-pro.png')}}" alt="">
+                <a href="/" id="coross" class="close fullflex">&cross;</a>
+            </div>
+            <div class="lowerlogin fullflex">
+                <form action="/login" method="POST" class="form">
+                    <input type="text" class="inputs" name="name" placeholder="Enter your name">
+                    <!-- <input type="text" class="inputs" name="last-name" placeholder="Enter your last name"> -->
+                    <!-- <input type="email" class="inputs" name="email" placeholder="Enter your email"> -->
+                    <input type="password" class="inputs" name="password" id="showpassbtn" placeholder="Enter your password">
+                    <div class="showpass">
+                        <input type="checkbox" onclick="myFunction()" class="shw-pas-btn">Show Password
+                    </div>
+                    <input href="/login" type="submit" value="Login" class="inputs" id="sub_btn">
+                    <!-- <input type="submit"><a href="/login" class="inputs" id="sub_btn">Login</a> -->
+                    <a href="/create-acount" id="creat_ac" class="inputs">Create account</a>
+                </form>
+            </div>
+            
+        </div>
+    </div>
+
 
     {% block body %} {% endblock %}
 

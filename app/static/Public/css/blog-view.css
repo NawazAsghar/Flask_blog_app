@@ -6,6 +6,7 @@
     width: 80%;
     /* background-color: brown; */
     margin: 1pc;
+    margin-top: 3pc;
     padding: 5px;
 }
 .blog-title{
@@ -15,6 +16,7 @@
 }
 .blog-content{
     /* background-color: cadetblue; */
+    height: 45vh;
 }
 .outher{
     list-style: none;

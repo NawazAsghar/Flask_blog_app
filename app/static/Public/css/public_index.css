@@ -5,15 +5,23 @@
     font-family: var(--roboto);
 }
 
-body{
-    background-color: var(--sixper);
-}
+/* 
+    =================
+    NAV STYLING
+    =================    */
 
 nav{
     height: 50px;
-    background-color: var(--tenper);
+    background-color: white;
     display: flex;
     justify-content: space-around;
+    box-shadow: -1px -9px 20px 2px #0009;
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+}
+nav a{
+    color: black;
 }
 
 .nav_encer{
@@ -23,19 +31,19 @@ nav{
 
 .nav_lis{
     list-style: none;
-    width: 4pc;
+    width: 6pc;
     margin: 4px;
-    /* background: gray; */
     padding: 4px;
     border-radius: 1pc;
     display: flex;
+    align-items: center;
     justify-content: center;
 }
 
 .nav_lis:hover{
-    border-bottom: 2px solid black;
-    border-radius: 0px;
-    transition: 0.3s;
+    font-weight: bold;
+    background: #cdc6dc2e;
+    /* transition: 0.4s ease-in-out; */
 }
 
 .left_nav{
@@ -58,6 +66,151 @@ nav{
 }
 
 
+/* 
+    =================
+    LOGIN STYLING
+    =================    */
+
+
+    
+ .full-loginpage{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    z-index: 10;
+    width: 100%;
+    background-color: rgb(0, 0, 0, 0.9);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.login_area{
+    height: 25pc;
+    width: 37pc;
+    background-color: white;
+    border-radius: 4pc;
+}
+
+
+#coross{
+    float: right;
+    position: relative;
+    top: -1.9pc;
+    right: -11.8pc;
+    text-decoration: none;
+    font-size: 30px;
+    color: #231e1e;
+    transition: all 1s ease;
+    height: 40px;
+    width: 40px;
+    margin: 4px;
+    border-radius: 10px;
+}
+
+
+#coross:hover{
+    transform: rotate(190deg);
+    color: rgb(255, 0, 0);
+    background-color: var(--tenper);
+    border-radius: 3pc;
+}
+
+.uperlogin{
+    height: 30%;
+    width: 100%;
+}
+
+.lowerlogin{
+    height: 70%;
+    width: 100%;
+}
+
+
+#login_por{
+    max-width: 7pc;
+    border-radius: 100%;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 73%;
+    height: 95%;
+}
+
+.form a{
+    text-decoration: none;
+}
+.inputs{
+    height: 20%;
+    border: none;
+    outline: none;
+    background-color: #f0f0f1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4pc;
+    padding-left: 1pc;
+    margin-bottom: 7px;
+}
+.shw-pas-btn{
+    background-color: blue;
+    height: 17px;
+    margin-right: 10px;
+}
+.showpass{
+    /* background-color: blueviolet; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 2pc;
+    padding-left: 1pc;
+    margin-top: -6px;
+    margin-bottom: 8px;
+}
+
+#sub_btn{
+    justify-content: center;
+    background-color:#b3a5a769;
+    font-size: 18px;
+    height: 40px;
+}
+
+
+#sub_btn:hover{
+    font-size: 20px;
+    transition: 0.5s;
+    background-color: #0000efb3;
+    color: white;
+
+}
+
+#creat_ac{
+    text-decoration: none;
+    margin-top: 10px;
+    height: 30px;
+}
+
+
+#creat_ac:hover{
+    background-color: var(--thirper);
+    font-size: 20px;
+    font-weight: bold;
+    transition: 0.5s;
+    box-shadow: 1px 1px 1pc 0px #00000075;
+}
+
+
+
+/* 
+    =================
+    FOOTER STYLING
+    =================    */
+
+
+    
 footer{
     height: 25vh;
     background-color: black;

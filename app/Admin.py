@@ -26,14 +26,13 @@ def acrate_acount():
             return redirect(url_for('dishbord', posts = all_posts))
     return render_template('/Admin/create-acount.html')
 
-
 @app.route('/login', methods = ['POST', 'GET'])
 def loginpage():
     if request.method == 'POST':
         logindata = request.form
         name = logindata['name']
         password = logindata['password']
-        with open('G:\\__Coding__\\___Projects___\\Blog-site-with-flask\\app\\user.json', 'r') as f:
+        with open('G:\\__Coding__\\___Projects___\\Flask_blog_app\\app\\user.json', 'r') as f:
             userdata = json.load(f)['users']
             if name == userdata['name'] and password == userdata['password']:
                 # Here i was facing the error becuse of the input of the fomr.
@@ -43,14 +42,14 @@ def loginpage():
                 session['user'] = name
                 all_posts = Posts.query.filter_by().all()
                 return render_template('/Admin/dishbord.html', posts = all_posts, name = name)
-            else:
-                return redirect(request.url)
-    return render_template('/Public/login.html')
+
+    return redirect(url_for('index'))
+
 
 
 @app.route('/dishbord')
 def dishbord():
-    with open('G:\\__Coding__\\___Projects___\\Blog-site-with-flask\\app\\user.json', 'r') as f:
+    with open('G:\\__Coding__\\___Projects___\\Flask_blog_app\\app\\user.json', 'r') as f:
         userdata = json.load(f)['users']
 
     if 'user' in session and session['user'] == userdata['name']:
@@ -71,7 +70,9 @@ def dishbord():
             return render_template('/Admin/dishbord.html', posts = all_posts, name = name)
         else:
                 return render_template('/Public/login.html')
-    return render_template('/Public/login.html')
+
+    return 'Please login first!'
+
 
 
 @app.route('/porfile')

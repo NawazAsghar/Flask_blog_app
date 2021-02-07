@@ -6,48 +6,55 @@
 .text-cont{
     background-color: #c5cbc591;
     height: 10pc;
-    width: 35pc;
+    width: 39pc;
     position: relative;
     top: 79px;
     left: 123px;
     padding: 4px;
     border-radius: 1pc;
 }
-.text-cont p{
-    margin-top: 4px;
+.text-cont p, h1{
+    margin-top: 8px;
 }
+
+
+
+/*  =========================
+    FEW BLGS SECTION STYLING
+    =========================   */
+
+
 
 #few-blogs{
     padding-top: 40px;
     height: 100%;
-    background-color: var(--tenper);
+    /* background-color: var(--tenper); */
 }
 #few-blogs h1{
     margin-top: 4pc;
 }
 #few-blogs a{
     text-decoration: none;
+    box-shadow: -2px 2px 9px #00000017;
+    color: black;
+}
+#few-blgs a:hover{
+    box-shadow: 8px 9px 1pc #00000075;
 }
 .blogs-area{
     height: 100%;
     width: 80%;
     margin: 10px;
-    /* background-color: var(--sixper); */
+    background-color: #fffbfb9c;
     border-radius: 3pc;
     padding: 10px;
 }
-.blogs-area a:hover{
-    font-size: 1.2rem;
-}
+
 .blogs{
     height: 10pc;
     width: 80%;
     border-radius: 10px;
-   background-color: #fffbfb9c;
     margin-bottom: 1.2pc;
-}
-.blogs:hover{
-    box-shadow: 8px 9px 1pc #00000075;
 }
 
 .titel-con{
@@ -67,20 +74,27 @@
     /* background-color: darkorange; */
 }
 
+
+
+/*  =========================
+    ABOUT SECTION STYLING
+    =========================   */
+
+
+
 #about-home{
     height: 45vh;
     width: 100%;
-    background-color: #ecedee;
 }
 .about{
     width: 80%;
     height: 90%;
-    /* background-color: salmon; */
+    background-color: #f1f1f17a;
+    border-radius: 10px;
 }
 .about-text-area{
     width: 80%;
     height: 80%;
-    /* background-color: white; */
     padding: 4px;
 }
 .about-text-area h1{
